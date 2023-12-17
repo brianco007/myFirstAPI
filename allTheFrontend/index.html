@@ -9,6 +9,8 @@
 <body>
     <noscript>This API needs Javascript running in your browser in order to run properly.</noscript>
     
+    
+
     <header>
         <nav>
             <h1>🎦MovieApi</h1>
@@ -19,10 +21,24 @@
             </div> 
         </nav>
     </header>
+
+    <!-- <form action="/" method="post">
+        <input type="text"  placeholder="movie cover" required name="cover">
+        <input type="text"  placeholder="movie title" required name="title">
+        <input type="text"  placeholder="movie genre" required name="genre">
+        <input type="text"  placeholder="movie plot" required name="plot">
+        <input type="number"  placeholder="stars" required name="stars">
+        <span>Is it for kids?</span>
+        <input type="checkbox"  placeholder="Is for kids as well?" required name="isForEveryone">
+        <input type="submit" value="Add movie">
+    </form>  -->
+
     <main>
         <h2>Movie Billboard</h2>
         <div id="cards"></div>
+        <div id="loader" class="hide"></div>
     </main>
+    
 
 
     <script src="./index.js"></script>
