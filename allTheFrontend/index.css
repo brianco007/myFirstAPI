@@ -1,0 +1,88 @@
+:root{
+  --red: #b02121;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+}
+
+body{
+  background-color: rgb(236, 236, 236);
+}
+
+header{
+  background-color: var(--red);
+  padding: 20px 40px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+nav a{
+  color: white;
+  margin-left: 20px;
+}
+
+
+main{
+  text-align: center;
+  padding: 50px 0;
+}
+
+main h2{
+  font-size: 2rem;
+}
+
+/* cards section */
+#cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: clamp(150px, 90%, 1800px);
+}
+
+.card{
+  box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+  background-color: #fff;
+  display: flex;
+  border-radius: 20px;
+}
+
+.movie-cover{
+  width: 100px;
+  height: auto;
+}
+
+.card-texts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+.card h3{
+  font-size: 1.3rem;
+}
+.card button{
+  background-color: var(--red);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  align-self: center;
+  margin-top: 10px;
+}
+.card button:hover{
+  background-color: rgb(221, 8, 8);
+}

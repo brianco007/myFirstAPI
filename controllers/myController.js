@@ -24,11 +24,12 @@ const movieController = {
     try{
       const newMovie = new movieModel(req.body);//create a movie to send on Pm
       const createdMovie = await newMovie.save(); // save movie in MongoDB
+      console.log(createdMovie);
       if(createdMovie._id){
-        res.json({message: 'Movie has been added to the list'});
+        res.json({message: 'Movie has been added to the list.'});
       }
     } catch (error) {
-      res.json({message: "It wasn't possible to create this movie. Make sure all the fields marked as required are complete."})
+      res.json({message: "It wasn't possible to create this movie. Make sure all the fields marked as required are complete and have the right name."})
     }
   },
 
